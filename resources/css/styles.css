@@ -75,3 +75,51 @@ nav a {
     text-decoration: none;
     
 }
+
+header .mobile {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 895px) {
+    nav li:last-child {
+      display: block;
+    }
+  
+    header .content {
+      padding: 1rem 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header .desktop {
+      display: none;
+    }
+
+    header .logo {
+        display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    header .content {
+      padding: 0.06rem 0;
+    }
+  
+    header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  
+    header .mobile li {
+      padding: 0;
+      align-self: baseline;
+    }
+  }
+  
